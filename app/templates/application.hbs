@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<h1>Fesitvales y Proyecciones</h1>
+
+<hr>
+
+<nav>
+  <ul>
+    <li>
+      {{#link-to 'lista-proyeccion'}} Ver todas las Proyecciones {{/link-to}}
+    </li>
+    <li>
+      {{#link-to 'lista-peliculas'}} Ver todas las Peliculas {{/link-to}}
+    </li>
+  </ul>
+</nav>
+
+<hr>
+
+<div id="main">
+  {{outlet}}
+</div>

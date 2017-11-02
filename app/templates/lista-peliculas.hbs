@@ -1,0 +1,23 @@
+{{outlet}}
+
+<h3> Lista Peliculas </h3>
+
+<ul>
+    {{#each model as |pelicula|}}
+      <li>
+        {{#link-to 'detalles-peliculas' pelicula.id}}
+          {{pelicula.id}} - {{pelicula.nombre}}
+        {{/link-to}}
+      </li> <button {{action 'detalles'}}> Detalles </button>
+    {{/each}}
+</ul>
+
+<!-- <hr>
+
+ <ul>
+  {{#each model as |peli|}}
+    <li>
+      {{peli.genero}}
+    </li>
+  {{/each}}
+</ul> -->
